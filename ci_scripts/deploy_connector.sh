@@ -13,6 +13,7 @@ fi
 cd /opt
 git clone https://github.com/splunk/splunk-connect-for-kubernetes.git
 cd splunk-connect-for-kubernetes
+git checkout functional_test
 
 minikube image load splunk/k8s-metrics-aggr:recent
 
